@@ -27,6 +27,19 @@ O aplicativo foi pensado para evitar que você tenha que digitar o token da SPTr
 2. **Entrada automática nas próximas aberturas:** Ao abrir o aplicativo novamente, ele lê o token salvo no `AsyncStorage` e já valida automaticamente na API da SPTrans. Se estiver válido, você entra direto nas abas do app sem precisar preencher nada de novo.
 3. **Sessão expirada ou troca de token:** Caso a API recuse o token salvo (por expiração ou revogação), o app remove o valor inválido do `AsyncStorage` e volta para a tela de token. Você também pode tocar em **Sair** no topo do app a qualquer momento para apagar o token salvo e digitar outro.
 
+## Vídeo de Demonstração (YouTube)
+
+Para a entrega do projeto, há um vídeo demonstrativo de até 3 minutos gravado diretamente em um smartphone real rodando o aplicativo com dados da API Olho Vivo da SPTrans:
+
+- **Link do vídeo no YouTube:** `https://youtu.be/fbO19RYTuMk`
+
+### O que é demonstrado no vídeo
+- O aplicativo abrindo e funcionando em um celular real conectado à API Olho Vivo da SPTrans.
+- A autenticação com o token da SPTrans e o salvamento automático para próximas aberturas.
+- O uso do **GPS** (`expo-location`) para localizar pontos de ônibus próximos e calcular distâncias.
+- O disparo de **alerta/notificação e vibração** ao monitorar a chegada ou desembarque.
+- A visualização de linhas, veículos acessíveis e mapa em tempo real, além do modo de alto contraste.
+
 ## Estrutura do Projeto
 
 ```text
