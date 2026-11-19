@@ -5,20 +5,40 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "dark",
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#000",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
-      }
+      },
+      "edgeToEdgeEnabled": true,
+      "android": {
+        "backgroundColor": "#000"
+      },
+      "androidNavigationBar": {
+        "barStyle": "dark-content",
+        "enforceContrast": false
+      },
+      "plugins": [
+        [
+          "expo-navigation-bar",
+          {
+            "enforceContrast": false,
+            "style": "light"
+          }
+        ]
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "react-native-edge-to-edge"
+    ]
   }
 }
